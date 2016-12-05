@@ -1,0 +1,187 @@
+{% extends "YSBundle::layout.html.twig" %}
+
+{% block body_layout %}
+    
+      <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Qui Suis-Je?</h2>
+                    <hr class="light">
+                    <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, at autem corporis dolorum eos exercitationem fugit illum impedit incidunt iure laborum nihil, nulla perferendis provident, qui ratione voluptatem! Aliquid, nihil?</p>
+                    <a href="#competence" class="page-scroll btn btn-default btn-xl sr-button">Mes Competences!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competence">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Mes Compétences</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-globe text-primary sr-icons"></i>
+                        <h3>WEB</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-mobile text-primary sr-icons"></i>
+                        <h3>Android</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-desktop text-primary sr-icons"></i>
+                        <h3>IOS</h3>
+                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-cloud text-primary sr-icons"></i>
+                        <h3>AWS</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/1.jpg') }}" class="portfolio-box">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/1.jpg') }}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/2.jpg') }}" class="portfolio-box">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/2.jpg') }}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/3.jpg') }}" class="portfolio-box">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/3.jpg') }}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/4.jpg') }}" class="portfolio-box">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/4.jpg') }}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/5.jpg') }}" class="portfolio-box">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/5.jpg') }}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/6.jpg') }}" class="portfolio-box">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/6.jpg') }}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Mon github pour voir mes réalisations</h2>
+                <a href="http://github.com/noahbabilone"
+                   class="btn btn-default btn-xl sr-button">Github</a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Me contacter</h2>
+                    <hr class="primary">
+                    <p>###</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>06*******89</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:yannick.said@estiam.com">Yannick.said@outlook.fr</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

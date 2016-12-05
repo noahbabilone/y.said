@@ -1,0 +1,9 @@
+ys:
+    resource: "@YSBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+#portfolio:
+#    resource: "@PortfolioBundle/Controller/"
+#    type:     annotation
+#    prefix:   /

@@ -1,0 +1,52 @@
+{% extends "::base.html.twig" %}
+
+
+{% block body %}
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Y.Said</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">Moi</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#competence">Compétences</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Bienvenue</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut magni neque? Autem dolor fuga possimus quidem velit? Ad, adipisci ea minima minus non perspiciatis quibusdam quisquam! Iusto modi, sequi.</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">A propos de moi</a>
+            </div>
+        </div>
+    </header>
+    
+    {% block body_layout %}
+    {% endblock %}
+{% endblock %}

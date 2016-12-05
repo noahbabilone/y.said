@@ -12,13 +12,13 @@ class YSController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('PortfolioBundle:Pages:index.html.twig');
+        return $this->render('YSBundle:Pages:index.html.twig');
     }
     /**
      * @Route("/contact", name="contactPage")
      */
     public function HomeAction()
     {
-        return $this->render('PortfolioBundle:Pages:index.html.twig');
+        return $this->render('YSBundle:Pages:index.html.twig');
     }
 }
