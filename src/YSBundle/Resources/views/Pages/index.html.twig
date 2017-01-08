@@ -1,15 +1,176 @@
 {% extends "YSBundle::layout.html.twig" %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets
+    'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    'https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+    'assets/magnific-popup/magnific-popup.css'
+    'bundles/ys/css/creative.css'
+    'bundles/ys/css/timeline.css'
+    filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock %}
+
 {% block body_layout %}
-    
-      <section class="bg-primary" id="about">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Y.Said</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#me">Moi</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#competence">Compétences</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Bienvenu</h1>
+                <hr>
+                {# <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut magni neque? Autem dolor fuga
+                     possimus quidem velit? Ad, adipisci ea minima minus non perspiciatis quibusdam quisquam! Iusto modi,
+                     sequi.</p>#}
+                <p class="lead">Bonjour, je m'appelle <b>Yannick</b> et je suis un développeur <b>Back-End</b>.<br> Sur
+                    ce site vous trouverez des renseignements sur ma vie professionnelle et un résumé de
+                    mes dernières réalisations ainsi que de nombreuses réflexions sur ma personnalité.<br>
+                    Si vous souhaitez me contacter,je vous invite à vous rendre en bas de la page pour voir mes
+                    coordonnées ou cliquez sur ce <a
+                            href="#contact" class="page-scroll">lien</a>.<br>
+                    Je vous souhaites
+                    une bonne visite.</p>
+                <a href="#me" class="btn btn-primary btn-xl page-scroll">A propos de moi</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="me">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="col-lg-12 text-center ">
                     <h2 class="section-heading">Qui Suis-Je?</h2>
                     <hr class="light">
-                    <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, at autem corporis dolorum eos exercitationem fugit illum impedit incidunt iure laborum nihil, nulla perferendis provident, qui ratione voluptatem! Aliquid, nihil?</p>
-                    <a href="#competence" class="page-scroll btn btn-default btn-xl sr-button">Mes Competences!</a>
+                    <p class="text-faded">
+                        Je m’appelle Yannick SAID, je suis actuellement en Master 2 en Alternance dans le domaine de
+                        l’Informatique à l’ESTIAM de Paris. J’occupe également un poste de développeur web depuis un ans
+                        et demi
+                        chez 42consulting ou j’ai pu apporté mon dynamisme, mon esprit d’équipe et mon ambiant.
+                        Intéressé par la programmation depuis mon jeune âge, j'ai donc décidé de suivre une formation
+                        DUT(Diplôme Universitaire de Technologie) et une licence 3 en Informatique. Ces formations m’ont
+                        permis d’apprendre les bases du développement sans avoir à me spécialiser pour autant. Ainsi,
+                        j'ai pu apprendre à faire de la programmation logiciel à travers différentes langages telles que
+                        l'ADA, le C/C++,Python. , le Shell et le JAVA mais aussi du développement web avec le HTML, CSS,
+                        PHP et Javacript et celle ci a véritablement orienté mon choix professionnel.
+                    </p>
+                    {#<a href="#competence" class="page-scroll btn btn-default btn-xl sr-button">Mes Competences!</a>#}
+                </div>
+
+                <div class="col-lg-12 text-center ">
+
+                    <h2 class="section-heading">Formations & Expériences </h2>
+                </div>
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <span class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="flag">Master 1&2 en Alternace</span>
+                                    <span class="time-wrapper"><span class="time">2015 - 2017</span></span>
+                                </div>
+                                <div class="desc">Participer à plusieurs projets que soient en web ou dans le développement des Applications Mobiles(Java&IOS).
+                                </div>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="flag">Développeur chez 42Consulting</span>
+                                </div>
+                                
+                                <div class="desc">Participer à la réalisation des plusieurs projets web chez 
+                                    <a href="https://www.42consulting.fr/" target="_blank">42Consulting.fr</a> tels que le développement de plusieurs projets internes.
+                                </div>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag">Développeur freelance</span>
+                                    <span class="time-wrapper"><span class="time">2013 - 2014</span></span>
+                                </div>
+                                <div class="desc">Diverses missions d’Intérim: Développeur web, Administration de base
+                                    de données,...
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Item 3 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="flag">L3 Professionnelle PGI</span>
+                                    <span class="time-wrapper"><span class="time">2011 - 2012</span></span>
+                                </div>
+                                <div class="desc"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag">DUT Informatque</span>
+                                    <span class="time-wrapper"><span class="time">2010 - 2012</span></span>
+                                </div>
+                                <div class="desc">Formation suivi d'un stage de 3 mois en tant que développeur logiciel
+                                    chez IRSTEA de Montpellier.
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="flag">Formation Webmaster</span>
+                                    <span class="time-wrapper"><span class="time">6 Mois</span></span>
+                                </div>
+                                <div class="desc">Développement de plusieurs projets web.
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag">BAC Scientifique</span>
+                                    <span class="time-wrapper"><span class="time">2009</span></span>
+                                </div>
+                                <div class="desc">La Haie griselle de Gérardmer.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -30,30 +191,30 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-globe text-primary sr-icons"></i>
                         <h3>WEB</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        {#<p class="text-muted">A finir</p>#}
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-mobile text-primary sr-icons"></i>
-                        <h3>Android</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <h3>Android/IOS</h3>
+                        {#<p class="text-muted">A finir</p>#}
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-desktop text-primary sr-icons"></i>
-                        <h3>IOS</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <h3>OS</h3>
+                        {#<p class="text-muted">A finir</p>#}
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-cloud text-primary sr-icons"></i>
                         <h3>AWS</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        {#<p class="text-muted">A finir</p>#}
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </section>
@@ -63,11 +224,12 @@
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
                     <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/1.jpg') }}" class="portfolio-box">
-                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/1.jpg') }}" class="img-responsive" alt="">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/1.jpg') }}" class="img-responsive"
+                             alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Titre
                                 </div>
                                 <div class="project-name">
                                     Project Name
@@ -78,14 +240,15 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/2.jpg') }}" class="portfolio-box">
-                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/2.jpg') }}" class="img-responsive" alt="">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/2.jpg') }}" class="img-responsive"
+                             alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Titre
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Projet
                                 </div>
                             </div>
                         </div>
@@ -93,14 +256,15 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/3.jpg') }}" class="portfolio-box">
-                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/3.jpg') }}" class="img-responsive" alt="">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/3.jpg') }}" class="img-responsive"
+                             alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Titre
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Projet
                                 </div>
                             </div>
                         </div>
@@ -108,14 +272,15 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/4.jpg') }}" class="portfolio-box">
-                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/4.jpg') }}" class="img-responsive" alt="">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/4.jpg') }}" class="img-responsive"
+                             alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Titre
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Projet
                                 </div>
                             </div>
                         </div>
@@ -123,14 +288,15 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/5.jpg') }}" class="portfolio-box">
-                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/5.jpg') }}" class="img-responsive" alt="">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/5.jpg') }}" class="img-responsive"
+                             alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Titre
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Projet
                                 </div>
                             </div>
                         </div>
@@ -138,14 +304,15 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="{{ asset('bundles/ys/img/fullsize/thumbnails/6.jpg') }}" class="portfolio-box">
-                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/6.jpg') }}" class="img-responsive" alt="">
+                        <img src="{{ asset('bundles/ys/img/portfolio/thumbnails/6.jpg') }}" class="img-responsive"
+                             alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Titre
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Projet
                                 </div>
                             </div>
                         </div>
@@ -155,12 +322,12 @@
         </div>
     </section>
 
-    <aside class="bg-dark">
+    <aside class="bg-transparent">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2>Mon github pour voir mes réalisations</h2>
+                <h2>Je vous invites à aller sur mon github pour voir mes réalisations</h2>
                 <a href="http://github.com/noahbabilone"
-                   class="btn btn-default btn-xl sr-button">Github</a>
+                   class="btn btn-default btn-xl sr-button"><i class="fa fa-github-alt"></i> Github</a>
             </div>
         </div>
     </aside>
@@ -171,17 +338,30 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Me contacter</h2>
                     <hr class="primary">
-                    <p>###</p>
+                    <p>######################</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>06*******89</p>
+                    <i class="fa fa-phone text-primary fa-3x sr-contact"></i>
+                    <p><a href="javascript:;" class="text-primary cell-phone">06<span>*******</span>98</a></p>
                 </div>
                 <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:yannick.said@estiam.com">Yannick.said@outlook.fr</a></p>
+                    <i class="fa fa-envelope-o  text-primary fa-3x sr-contact"></i>
+                    <p><a href="mailto:yannick.said@estiam.com" class="text-primary">Yannick.said@outlook.fr</a></p>
                 </div>
             </div>
         </div>
     </section>
+{% endblock %}
+
+
+
+{% block javascripts %}
+    {{ parent() }}
+    {% javascripts
+    'assets/jquery/jquery.easy.min.js'
+    'assets/scrollreveal/scrollreveal.min.js'
+    'assets/magnific-popup/jquery.magnific-popup.min.js'
+    'bundles/ys/js/creative.js' %}
+    <script src="{{ asset_url }}" type="text/javascript"></script>
+    {% endjavascripts %}
 {% endblock %}

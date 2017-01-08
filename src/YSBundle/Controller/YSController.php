@@ -7,13 +7,14 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class YSController extends Controller
 {
-     /**
+    /**
      * @Route("/", name="homepage")
      */
     public function indexAction()
     {
         return $this->render('YSBundle:Pages:index.html.twig');
     }
+
     /**
      * @Route("/contact", name="contactPage")
      */
@@ -21,4 +22,6 @@ class YSController extends Controller
     {
         return $this->render('YSBundle:Pages:index.html.twig');
     }
+
+
 }

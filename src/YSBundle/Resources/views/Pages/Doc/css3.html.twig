@@ -1,0 +1,70 @@
+{% extends "YSBundle::layout.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets
+    'bundles/ys/css/css3/style.css'
+    filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock %}
+
+    {% block body_layout %}
+
+        <section>
+            <code>
+                section {
+                text-align: justify;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+
+                /* Permet de créer des colonnes*/
+                -webkit-column-count: 4;
+                -moz-column-count: 4;
+                column-count: 4;
+                }
+
+
+            </code>
+            <code>
+                section h1 {
+                break-before: column;
+                -webkit-column-break-before: always;
+                }
+            </code>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur culpa cupiditate delectus
+            deserunt, esse ex exercitationem hic illo iusto minus necessitatibus nesciunt omnis, possimus recusandae rem
+            repellat similique vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis distinctio
+            eveniet fugiat id, maxime minus natus nostrum quaerat ratione sequi sunt? Ab amet asperiores cum cumque
+            dolor dolores eaque esse et ex excepturi exercitationem fugiat ipsa labore magnam nisi, nostrum odio officia
+            possimus, quaerat repellat repellendus saepe sapiente similique sit tenetur veritatis voluptate. Aspernatur
+            commodi consequuntur culpa, dicta dolorem earum eligendi et facere impedit libero perspiciatis reiciendis
+            rem repudiandae sapiente unde vel veritatis? Aliquid architecto at atque commodi consectetur consequuntur
+            dicta distinctio ducimus eos error esse expedita facere fuga harum,
+
+            <h1>Test</h1>
+            inventore libero magnam maiores minus
+            mollitia nemo nihil nisi odio omnis pariatur perferendis placeat porro praesentium quae quam quas quo
+            repellendus rerum, saepe velit veniam voluptate voluptatum. Ad at blanditiis consequatur corporis cupiditate
+            dicta, ducimus ea et exercitationem facilis fuga fugiat hic magnam magni nemo nihil odit quidem quisquam
+            ratione repellat rerum similique soluta unde ut voluptatum! Accusamus cupiditate, deserunt dolore fugit
+            incidunt laudantium libero molestiae nisi quasi ratione rem tempore totam veniam. A aliquid est explicabo
+            numquam quam? Autem corporis dolore ducimus error fugit harum id laboriosam magnam quasi, repellat sed
+            temporibus totam, velit. Error, id sint. Ab accusantium amet, facere laborum suscipit temporibus veritatis
+            voluptate. Praesentium, voluptate.
+
+            <code>
+                background-image: linear-gradient(blue, green);
+            </code>
+
+            <div class="back-div"></div>
+            <code>
+                background-image: linear-gradient(to right, blue, green, #0ff, rgb(200, 30, 170));
+            </code>
+            <div class="linear-gradient"></div>
+
+        </section>
+    {% endblock %}
+    

@@ -1,9 +1,13 @@
+back:
+    resource: "@BackBundle/Controller/"
+    type:     annotation
+    prefix:   /back
+
 ys:
     resource: "@YSBundle/Controller/"
     type:     annotation
     prefix:   /
+    
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
 
-#portfolio:
-#    resource: "@PortfolioBundle/Controller/"
-#    type:     annotation
-#    prefix:   /
